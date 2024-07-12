@@ -17,6 +17,7 @@ namespace WarehouseInventoryManager
             InitializeComponent();
         }
 
+        //opens the items menu
         private void btnItems_Click(object sender, EventArgs e)
         {
             Items items = new Items();

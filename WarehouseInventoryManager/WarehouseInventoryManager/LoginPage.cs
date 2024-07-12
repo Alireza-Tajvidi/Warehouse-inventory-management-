@@ -50,7 +50,7 @@ namespace WarehouseInventoryManager
         private bool CheckLogin(string username, string password)
         {
             bool isValid = false;
-
+            //controls login information username
             try
             {
                 conn.Open();
@@ -64,13 +64,14 @@ namespace WarehouseInventoryManager
                 if (reader.Read())
                 {
                     string storedPassword = reader["Password"].ToString();
-
+                    // checks if password and user name match
                     if (storedPassword == password)
                     {
                         isValid = true;
                     }
                 }
             }
+            //catches exceptions
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
@@ -82,6 +83,7 @@ namespace WarehouseInventoryManager
 
             return isValid;
         }
+        //opens sign up page
         private void lbSignUp_Click(object sender, EventArgs e)
         {
             frmSignUp signUpPage = new frmSignUp();

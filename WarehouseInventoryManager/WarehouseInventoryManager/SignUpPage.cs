@@ -22,11 +22,13 @@ namespace WarehouseInventoryManager
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // stablishes conection to the data base
             SQLiteConnection conn = new SQLiteConnection(@"Data Source=C:\Users\parsa\Desktop\Depo Envanter yonetici\Database\Users.sqlite;Version=3;New=True;Compress=True;");
             if (txtPassword_signup.Text == txtPasswordConfirm.Text)
             {
                 try
                 {
+                    //adds new users
                     conn.Open();
                     string query = "insert into User(Username, Password) values('" + this.txtUsername_signup.Text + "'" +
                         ",'" + this.txtPassword_signup.Text + "')";
@@ -40,6 +42,7 @@ namespace WarehouseInventoryManager
                     MessageBox.Show(ex.Message);
                 }
             }
+            //shows error if the password repeat is incorrect
             else 
             {
                 MessageBox.Show("Sifre tekrar yanliş");
