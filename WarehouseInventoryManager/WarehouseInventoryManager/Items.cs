@@ -63,5 +63,25 @@ namespace WarehouseInventoryManager
             txtItemName.Text = "Ürün adı";
             txtItemName.ForeColor= Color.LightGray;
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (txtItemName.Text != null && txtPrice.Text != null && txtCode.Text != null && txtItemName.Text != "Ürün adı" && 
+              txtPrice.Text != "Ürün fıyatı" && txtCode.Text != "Ürün kodu")
+            try
+            {
+                connection.Open();
+                string query = "insert into Items(Urun_ad, Urun_fiyat, Urun_kod) values('" + this.txtItemName.Text + "'" +
+                    ",'" + this.txtPrice.Text + "' ,'" + this.txtCode.Text + "')";
+                SQLiteCommand cmd = new SQLiteCommand(query, connection);
+                cmd.ExecuteReader();
+                connection.Close();
+                MessageBox.Show("Kiracı eklendi");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

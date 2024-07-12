@@ -32,16 +32,13 @@ namespace WarehouseInventoryManager
             }
             if (CheckLogin(username, password))
             {
+                // login successful, go to menu and close login page
                 MessageBox.Show("Giriş yapıldı!");
                 frmMainMenu mainMenu = new frmMainMenu();
                 mainMenu.Show();
-                // login successful, do something
-                
                 this.Hide();
                 frmLogin Loginpage = new frmLogin();
-                //For when connected to main menu
-                // MainForm mainForm = new MainForm();
-                // mainForm.ShowDialog();
+
                 Loginpage.Close();
             }
             else
@@ -91,8 +88,4 @@ namespace WarehouseInventoryManager
             signUpPage.Show();
         }
     }
-
- 
 }
-
-
