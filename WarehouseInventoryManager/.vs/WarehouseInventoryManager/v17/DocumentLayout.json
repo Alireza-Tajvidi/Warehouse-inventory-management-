@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|c:\\users\\parsa\\desktop\\depo envanter yonetici\\warehouseinventorymanager\\warehouseinventorymanager\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|c:\\users\\parsa\\desktop\\depo envanter yonetici\\warehouseinventorymanager\\warehouseinventorymanager\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|c:\\users\\parsa\\desktop\\depo envanter yonetici\\warehouseinventorymanager\\warehouseinventorymanager\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|c:\\users\\parsa\\desktop\\depo envanter yonetici\\warehouseinventorymanager\\warehouseinventorymanager\\items.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\items.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|c:\\users\\parsa\\desktop\\depo envanter yonetici\\warehouseinventorymanager\\warehouseinventorymanager\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Items.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\Items.Designer.cs",
+              "RelativeDocumentMoniker": "WarehouseInventoryManager\\Items.Designer.cs",
+              "ToolTip": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\Items.Designer.cs",
+              "RelativeToolTip": "WarehouseInventoryManager\\Items.Designer.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAASwDEAAAB6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T18:16:51.79Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -38,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\MainMenu.cs",
               "RelativeDocumentMoniker": "WarehouseInventoryManager\\MainMenu.cs",
@@ -51,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainMenu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\MainMenu.cs",
               "RelativeDocumentMoniker": "WarehouseInventoryManager\\MainMenu.cs",
@@ -67,21 +84,21 @@
               "Title": "Items.cs",
               "DocumentMoniker": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\Items.cs",
               "RelativeDocumentMoniker": "WarehouseInventoryManager\\Items.cs",
-              "ToolTip": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\Items.cs",
-              "RelativeToolTip": "WarehouseInventoryManager\\Items.cs",
-              "ViewState": "AQIAAJUAAAAAAAAAAAAswK0AAAAWAAAA",
+              "ToolTip": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\Items.cs*",
+              "RelativeToolTip": "WarehouseInventoryManager\\Items.cs*",
+              "ViewState": "AQIAALAAAAAAAAAAAADwv8wAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-12T14:55:02.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Items.cs [Design]",
               "DocumentMoniker": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\Items.cs",
               "RelativeDocumentMoniker": "WarehouseInventoryManager\\Items.cs",
-              "ToolTip": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\Items.cs [Design]",
-              "RelativeToolTip": "WarehouseInventoryManager\\Items.cs [Design]",
+              "ToolTip": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\Items.cs [Design]*",
+              "RelativeToolTip": "WarehouseInventoryManager\\Items.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-12T14:49:06.203Z",
               "EditorCaption": " [Design]"

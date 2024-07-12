@@ -48,7 +48,6 @@
             this.dtgrdItems.Size = new System.Drawing.Size(908, 484);
             this.dtgrdItems.TabIndex = 0;
             this.dtgrdItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrdItems_CellClick);
-            this.dtgrdItems.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrdItems_CellContentDoubleClick);
             // 
             // txtItemName
             // 

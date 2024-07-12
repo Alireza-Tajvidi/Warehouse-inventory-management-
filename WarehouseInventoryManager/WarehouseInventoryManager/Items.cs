@@ -179,10 +179,6 @@ namespace WarehouseInventoryManager
                 }
             }
         }
-        private void dtgrdItems_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
 
         //removes input from text boxes and replaces them with place holders
         private void Clear()
@@ -207,7 +203,5 @@ namespace WarehouseInventoryManager
             dtgrdItems.DataSource = dt;
             connection.Close();
         }
-
-
     }
 }
