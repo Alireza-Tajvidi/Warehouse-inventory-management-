@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace WarehouseInventoryManager
 {
-    public partial class MainMenu : Form
+    public partial class frmMainMenu : Form
     {
-        public MainMenu()
+        public frmMainMenu()
         {
             InitializeComponent();
+        }
+
+        private void btnItems_Click(object sender, EventArgs e)
+        {
+            Items items = new Items();
+            items.Show();
+            this.Hide();
+            frmMainMenu frmMainMenu = new frmMainMenu();
+            frmMainMenu.Close();
         }
     }
 }

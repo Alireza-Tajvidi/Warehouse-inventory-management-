@@ -33,7 +33,7 @@ namespace WarehouseInventoryManager
             if (CheckLogin(username, password))
             {
                 MessageBox.Show("Giriş yapıldı!");
-                MainMenu mainMenu = new MainMenu();
+                frmMainMenu mainMenu = new frmMainMenu();
                 mainMenu.Show();
                 // login successful, do something
                 
@@ -87,7 +87,7 @@ namespace WarehouseInventoryManager
         }
         private void lbSignUp_Click(object sender, EventArgs e)
         {
-            SignUpPage signUpPage = new SignUpPage();
+            frmSignUp signUpPage = new frmSignUp();
             signUpPage.Show();
         }
     }

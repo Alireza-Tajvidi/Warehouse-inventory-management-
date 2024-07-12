@@ -13,9 +13,9 @@ using System.Data.SQLite.Generic;
 
 namespace WarehouseInventoryManager
 {
-    public partial class SignUpPage : Form
+    public partial class frmSignUp : Form
     {
-        public SignUpPage()
+        public frmSignUp()
         {
             InitializeComponent();
         }

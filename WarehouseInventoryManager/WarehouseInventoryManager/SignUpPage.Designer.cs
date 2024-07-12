@@ -1,6 +1,6 @@
 ﻿namespace WarehouseInventoryManager
 {
-    partial class SignUpPage
+    partial class frmSignUp
     {
         /// <summary>
         /// Required designer variable.
@@ -114,7 +114,7 @@
             this.btnMakeAccount.UseVisualStyleBackColor = false;
             this.btnMakeAccount.Click += new System.EventHandler(this.button1_Click);
             // 
-            // SignUpPage
+            // frmSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -127,7 +127,7 @@
             this.Controls.Add(this.txtUsername_signup);
             this.Controls.Add(this.lbSignUp);
             this.Controls.Add(this.lbUsername_signup);
-            this.Name = "SignUpPage";
+            this.Name = "frmSignUp";
             this.Text = "SignUpPage";
             this.ResumeLayout(false);
             this.PerformLayout();
