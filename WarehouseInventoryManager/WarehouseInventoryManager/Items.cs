@@ -152,6 +152,37 @@ namespace WarehouseInventoryManager
                 }
             }
         }
+        private void dtgrdItems_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string searchText = txtCode.Text;
+
+            using (SQLiteConnection conn = new SQLiteConnection(connection))
+            {
+                if (e.RowIndex >= 0)
+                {
+                    // Get the current row
+                    DataGridViewRow row = dtgrdItems.Rows[e.RowIndex];
+
+                    // Assuming columns: 0 = Id, 1 = Name, 2 = Age, 3 = Email
+                    string ItemName = row.Cells[1].Value.ToString();
+                    string Price = row.Cells[2].Value.ToString();
+                    string Code = row.Cells[3].Value.ToString();
+
+                      txtItemName.ForeColor = Color.Black;
+                      txtPrice.ForeColor = Color.Black;
+                      txtCode.ForeColor = Color.Black;
+                      
+                    // Update text boxes with the values from the selected row
+                    txtItemName.Text = ItemName;
+                    txtPrice.Text = Price;
+                    txtCode.Text = Code;
+                }
+            }
+        }
+        private void dtgrdItems_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
 
         //removes input from text boxes and replaces them with place holders
         private void Clear()
@@ -176,5 +207,7 @@ namespace WarehouseInventoryManager
             dtgrdItems.DataSource = dt;
             connection.Close();
         }
+
+
     }
 }
