@@ -57,12 +57,7 @@ namespace WarehouseInventoryManager
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtCode.Text = "Ürün kodu";
-            txtCode.ForeColor = Color.LightGray;
-            txtPrice.Text = "Ürün fıyatı";
-            txtPrice.ForeColor = Color.LightGray;
-            txtItemName.Text = "Ürün adı";
-            txtItemName.ForeColor = Color.LightGray;
+           Clear();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -91,6 +86,7 @@ namespace WarehouseInventoryManager
 
             dtgrdItems.DataSource = dt;
             connection.Close();
+            Clear();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -125,6 +121,7 @@ namespace WarehouseInventoryManager
 
                         dtgrdItems.DataSource = dt;
                         connection.Close();
+                        Clear();
                     }
                     else
                     {
@@ -133,6 +130,16 @@ namespace WarehouseInventoryManager
                 }
             }
             
+        }
+
+        private void Clear()
+        {
+            txtCode.Text = "Ürün kodu";
+            txtCode.ForeColor = Color.LightGray;
+            txtPrice.Text = "Ürün fıyatı";
+            txtPrice.ForeColor = Color.LightGray;
+            txtItemName.Text = "Ürün adı";
+            txtItemName.ForeColor = Color.LightGray;
         }
     }
 }
