@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace WarehouseInventoryManager
 {
-    public partial class Form1 : Form
+    public partial class frmLogin : Form
     {
-        public Form1()
+        public frmLogin()
         {
             InitializeComponent();
+        }
+        
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbSignUp_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\bin\Debug\WarehouseInventoryManager.exe.config
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\bin\Debug\WarehouseInventoryManager.exe
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\bin\Debug\WarehouseInventoryManager.pdb
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.csproj.AssemblyReference.cache
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.frmLogin.resources
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.Properties.Resources.resources
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.SignUpPage.resources
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.csproj.GenerateResource.cache
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.csproj.CoreCompileInputs.cache
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.exe
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.pdb
