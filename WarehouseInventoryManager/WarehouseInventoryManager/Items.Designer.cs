@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgrdItems = new System.Windows.Forms.DataGridView();
             this.txtItemName = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtCode = new System.Windows.Forms.TextBox();
@@ -36,17 +36,17 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrdItems)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgrdItems
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 106);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(908, 484);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgrdItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgrdItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgrdItems.Location = new System.Drawing.Point(12, 106);
+            this.dtgrdItems.Name = "dtgrdItems";
+            this.dtgrdItems.Size = new System.Drawing.Size(908, 484);
+            this.dtgrdItems.TabIndex = 0;
             // 
             // txtItemName
             // 
@@ -102,6 +102,7 @@
             this.btnClear.TabIndex = 2;
             this.btnClear.Text = "Temizle";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnUpdate
             // 
@@ -137,10 +138,11 @@
             this.Controls.Add(this.txtCode);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtItemName);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgrdItems);
             this.Name = "Items";
             this.Text = "Items";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Items_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrdItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,7 +150,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgrdItems;
         private System.Windows.Forms.TextBox txtItemName;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtCode;
