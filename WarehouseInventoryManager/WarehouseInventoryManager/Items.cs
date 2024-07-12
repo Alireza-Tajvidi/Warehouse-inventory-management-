@@ -118,6 +118,41 @@ namespace WarehouseInventoryManager
             
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            //searches for row in data base with the entered barcode
+            string query = "SELECT * FROM Items WHERE Urun_kod = @SearchText";
+            string searchText = txtCode.Text;
+            connection.Open();
+            using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+            {
+                cmd.Parameters.AddWithValue("@SearchText", searchText);
+                using (SQLiteDataReader reader = cmd.ExecuteReader())
+                {
+                    //if an identical Urun_kod exists
+                    if (reader.Read())
+                    {
+                        int id = reader.GetInt32(0);
+                        // Update other columns of the matching row
+                        string deleteQuery = "DELETE FROM Items WHERE Id = @Id";
+                        using (SQLiteCommand updateCmd = new SQLiteCommand(deleteQuery, connection))
+                        {
+                            updateCmd.Parameters.AddWithValue("@Id", id);
+                            updateCmd.ExecuteReader();
+                            connection.Close();
+                        }
+
+                        PullData();
+                        Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Urun bulunmadı.");
+                    }
+                }
+            }
+        }
+
         //removes input from text boxes and replaces them with place holders
         private void Clear()
         {
@@ -140,11 +175,6 @@ namespace WarehouseInventoryManager
 
             dtgrdItems.DataSource = dt;
             connection.Close();
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
