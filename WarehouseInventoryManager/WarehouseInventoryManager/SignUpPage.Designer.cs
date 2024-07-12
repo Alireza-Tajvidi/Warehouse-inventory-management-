@@ -35,7 +35,7 @@
             this.lbPassword_signup = new System.Windows.Forms.Label();
             this.lbPasswordConfirm = new System.Windows.Forms.Label();
             this.txtPasswordConfirm = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMakeAccount = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUsername_signup
@@ -102,24 +102,24 @@
             this.txtPasswordConfirm.Size = new System.Drawing.Size(329, 26);
             this.txtPasswordConfirm.TabIndex = 6;
             // 
-            // button1
+            // btnMakeAccount
             // 
-            this.button1.BackColor = System.Drawing.Color.SandyBrown;
-            this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(371, 241);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 29);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Hesap oluştur";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnMakeAccount.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnMakeAccount.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMakeAccount.Location = new System.Drawing.Point(371, 241);
+            this.btnMakeAccount.Name = "btnMakeAccount";
+            this.btnMakeAccount.Size = new System.Drawing.Size(113, 29);
+            this.btnMakeAccount.TabIndex = 7;
+            this.btnMakeAccount.Text = "Hesap oluştur";
+            this.btnMakeAccount.UseVisualStyleBackColor = false;
+            this.btnMakeAccount.Click += new System.EventHandler(this.button1_Click);
             // 
             // SignUpPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 318);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnMakeAccount);
             this.Controls.Add(this.txtPasswordConfirm);
             this.Controls.Add(this.lbPasswordConfirm);
             this.Controls.Add(this.txtPassword_signup);
@@ -143,6 +143,6 @@
         private System.Windows.Forms.Label lbPassword_signup;
         private System.Windows.Forms.Label lbPasswordConfirm;
         private System.Windows.Forms.TextBox txtPasswordConfirm;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMakeAccount;
     }
 }
