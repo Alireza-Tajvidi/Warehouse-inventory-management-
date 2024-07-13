@@ -203,5 +203,12 @@ namespace WarehouseInventoryManager
             dtgrdItems.DataSource = dt;
             connection.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmMainMenu frmMainMenu = new frmMainMenu();
+            this.Close();
+            frmMainMenu.ShowDialog();
+        }
     }
 }

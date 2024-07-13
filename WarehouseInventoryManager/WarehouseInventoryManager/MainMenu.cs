@@ -22,9 +22,14 @@ namespace WarehouseInventoryManager
         {
             Items items = new Items();
             items.Show();
-            this.Hide();
-            frmMainMenu frmMainMenu = new frmMainMenu();
-            frmMainMenu.Close();
+            this.Close();
+        }
+
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+            Stock stock = new Stock();
+            stock.Show();
+            this.Close();
         }
     }
 }

@@ -65,6 +65,7 @@
             this.btnStock.TabIndex = 1;
             this.btnStock.Text = "Stok";
             this.btnStock.UseVisualStyleBackColor = false;
+            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
             // frmMainMenu
             // 
