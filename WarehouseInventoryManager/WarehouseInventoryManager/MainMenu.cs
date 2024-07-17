@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,15 +21,22 @@ namespace WarehouseInventoryManager
         //opens the items menu
         private void btnItems_Click(object sender, EventArgs e)
         {
-            Items items = new Items();
+            frmStock items = new frmStock();
             items.Show();
             this.Close();
         }
 
-        private void btnStock_Click(object sender, EventArgs e)
+        private void btnOrder_Click(object sender, EventArgs e)
         {
-            Stock stock = new Stock();
-            stock.Show();
+            frmOrder order = new frmOrder();
+            order.Show();
+            this.Close();
+        }
+
+        private void BtnInventory_Click(object sender, EventArgs e)
+        {
+            frmInventory inventory = new frmInventory();
+            inventory.Show();
             this.Close();
         }
     }

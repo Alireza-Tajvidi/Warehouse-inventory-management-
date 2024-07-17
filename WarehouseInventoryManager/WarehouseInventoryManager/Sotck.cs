@@ -13,11 +13,11 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WarehouseInventoryManager
 {
-    public partial class Items : Form
+    public partial class frmStock : Form
     {
 
         SQLiteConnection connection;
-        public Items()
+        public frmStock()
         {
             InitializeComponent();
         }
@@ -63,7 +63,7 @@ namespace WarehouseInventoryManager
                 try
                 {
                     connection.Open();
-                    string query = "insert into Items(Urun_ad, Urun_fiyat, Urun_kod) values('" + this.txtItemName.Text + "'" +
+                    string query = "insert into Stock(Urun_ad, Urun_fiyat, Urun_kod, Miktar) values('" + this.txtItemName.Text + "'" +
                         ",'" + this.txtPrice.Text + "' ,'" + this.txtCode.Text + "')";
                     SQLiteCommand cmd = new SQLiteCommand(query, connection);
                     cmd.ExecuteReader();
@@ -83,7 +83,7 @@ namespace WarehouseInventoryManager
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             //searches for row in data base with the entered barcode
-            string query = "SELECT * FROM Items WHERE Urun_kod = @SearchText";
+            string query = "SELECT * FROM Stock WHERE Urun_kod = @SearchText";
             string searchText = txtCode.Text;
             connection.Open();
             using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
@@ -96,11 +96,11 @@ namespace WarehouseInventoryManager
                     {
                         int id = reader.GetInt32(0);
                         // Update other columns of the matching row
-                        string updateQuery = "UPDATE Items SET Urun_ad = @New_ad, Urun_fiyat = @New_fiyat WHERE Id = @Id";
+                        string updateQuery = "UPDATE Stock SET Urun_ad = @New_ad, Urun_fiyat = @New_fiyat, Miktar = @New_miktar WHERE Id = @Id";
                         using (SQLiteCommand updateCmd = new SQLiteCommand(updateQuery, connection))
                         {
                             updateCmd.Parameters.AddWithValue("@New_ad", txtItemName.Text); 
-                            updateCmd.Parameters.AddWithValue("@New_fiyat", txtPrice.Text); 
+                            updateCmd.Parameters.AddWithValue("@New_fiyat", txtPrice.Text);
                             updateCmd.Parameters.AddWithValue("@Id", id);
                             updateCmd.ExecuteReader();
                             connection.Close();
@@ -121,7 +121,7 @@ namespace WarehouseInventoryManager
         private void btnDelete_Click(object sender, EventArgs e)
         {
             //searches for row in data base with the entered barcode
-            string query = "SELECT * FROM Items WHERE Urun_kod = @SearchText";
+            string query = "SELECT * FROM Stock WHERE Urun_kod = @SearchText";
             string searchText = txtCode.Text;
             connection.Open();
             using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
@@ -134,7 +134,7 @@ namespace WarehouseInventoryManager
                     {
                         int id = reader.GetInt32(0);
                         // Update other columns of the matching row
-                        string deleteQuery = "DELETE FROM Items WHERE Id = @Id";
+                        string deleteQuery = "DELETE FROM Stock WHERE Id = @Id";
                         using (SQLiteCommand updateCmd = new SQLiteCommand(deleteQuery, connection))
                         {
                             updateCmd.Parameters.AddWithValue("@Id", id);
@@ -195,7 +195,7 @@ namespace WarehouseInventoryManager
         private void PullData()
         {
             connection.Open();
-            SQLiteCommand comm = new SQLiteCommand("Select * From Items", connection);
+            SQLiteCommand comm = new SQLiteCommand("Select * From Stock", connection);
             DataTable dt = new DataTable();
             SQLiteDataAdapter dbadapter = new SQLiteDataAdapter(comm);
             dbadapter.Fill(dt);

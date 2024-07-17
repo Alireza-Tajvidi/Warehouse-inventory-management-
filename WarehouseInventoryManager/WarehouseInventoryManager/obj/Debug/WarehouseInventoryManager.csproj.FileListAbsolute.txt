@@ -64,4 +64,6 @@ C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\Warehous
 C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\Warehous.5BBF32C4.Up2Date
 C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.frmMainMenu.resources
 C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.frmSignUp.resources
-C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.Items.resources
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.frmStock.resources
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.frmInventory.resources
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.frmOrder.resources

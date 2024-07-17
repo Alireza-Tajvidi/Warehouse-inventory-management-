@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WarehouseInventoryManager
 {
-    public partial class Stock : Form
+    public partial class frmOrder : Form
     {
-        public Stock()
+        public frmOrder()
         {
             InitializeComponent();
         }

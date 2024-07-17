@@ -30,14 +30,16 @@
         {
             this.lbWelcome = new System.Windows.Forms.Label();
             this.btnItems = new System.Windows.Forms.Button();
-            this.btnStock = new System.Windows.Forms.Button();
+            this.btnOrder = new System.Windows.Forms.Button();
+            this.lbWelcome_user = new System.Windows.Forms.Label();
+            this.BtnInventory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbWelcome
             // 
             this.lbWelcome.AutoSize = true;
             this.lbWelcome.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWelcome.Location = new System.Drawing.Point(286, 107);
+            this.lbWelcome.Location = new System.Drawing.Point(286, 24);
             this.lbWelcome.Name = "lbWelcome";
             this.lbWelcome.Size = new System.Drawing.Size(228, 37);
             this.lbWelcome.TabIndex = 0;
@@ -47,33 +49,57 @@
             // 
             this.btnItems.BackColor = System.Drawing.Color.DarkOrange;
             this.btnItems.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItems.Location = new System.Drawing.Point(439, 188);
+            this.btnItems.Location = new System.Drawing.Point(430, 133);
             this.btnItems.Name = "btnItems";
             this.btnItems.Size = new System.Drawing.Size(216, 135);
             this.btnItems.TabIndex = 1;
-            this.btnItems.Text = "Ürünler";
+            this.btnItems.Text = "Stok";
             this.btnItems.UseVisualStyleBackColor = false;
             this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
             // 
-            // btnStock
+            // btnOrder
             // 
-            this.btnStock.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnStock.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStock.Location = new System.Drawing.Point(148, 188);
-            this.btnStock.Name = "btnStock";
-            this.btnStock.Size = new System.Drawing.Size(216, 135);
-            this.btnStock.TabIndex = 1;
-            this.btnStock.Text = "Stok";
-            this.btnStock.UseVisualStyleBackColor = false;
-            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
+            this.btnOrder.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnOrder.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.Location = new System.Drawing.Point(298, 274);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(216, 135);
+            this.btnOrder.TabIndex = 1;
+            this.btnOrder.Text = "Siparişler";
+            this.btnOrder.UseVisualStyleBackColor = false;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
+            // 
+            // lbWelcome_user
+            // 
+            this.lbWelcome_user.AutoSize = true;
+            this.lbWelcome_user.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWelcome_user.Location = new System.Drawing.Point(354, 61);
+            this.lbWelcome_user.Name = "lbWelcome_user";
+            this.lbWelcome_user.Size = new System.Drawing.Size(71, 37);
+            this.lbWelcome_user.TabIndex = 0;
+            this.lbWelcome_user.Text = "      ";
+            // 
+            // BtnInventory
+            // 
+            this.BtnInventory.BackColor = System.Drawing.Color.DarkOrange;
+            this.BtnInventory.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnInventory.Location = new System.Drawing.Point(182, 133);
+            this.BtnInventory.Name = "BtnInventory";
+            this.BtnInventory.Size = new System.Drawing.Size(216, 135);
+            this.BtnInventory.TabIndex = 1;
+            this.BtnInventory.Text = "Envanter";
+            this.BtnInventory.UseVisualStyleBackColor = false;
+            this.BtnInventory.Click += new System.EventHandler(this.BtnInventory_Click);
             // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnStock);
+            this.Controls.Add(this.BtnInventory);
+            this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.btnItems);
+            this.Controls.Add(this.lbWelcome_user);
             this.Controls.Add(this.lbWelcome);
             this.Name = "frmMainMenu";
             this.Text = "Depo Envanter Yönetici - Ana menu";
@@ -86,6 +112,8 @@
 
         private System.Windows.Forms.Label lbWelcome;
         private System.Windows.Forms.Button btnItems;
-        private System.Windows.Forms.Button btnStock;
+        private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.Label lbWelcome_user;
+        private System.Windows.Forms.Button BtnInventory;
     }
 }

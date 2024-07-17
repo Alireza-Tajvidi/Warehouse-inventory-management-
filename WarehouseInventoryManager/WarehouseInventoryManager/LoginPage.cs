@@ -11,8 +11,10 @@ using System.Windows.Forms;
 
 namespace WarehouseInventoryManager
 {
+    
     public partial class frmLogin : Form
     {
+        public static string User_name { get; set; }
         SQLiteConnection conn;
         public frmLogin()
         {
@@ -67,6 +69,7 @@ namespace WarehouseInventoryManager
                     // checks if password and user name match
                     if (storedPassword == password)
                     {
+                        User_name = reader ["Ad"].ToString() + " " + reader["Soyad"].ToString();
                         isValid = true;
                     }
                 }

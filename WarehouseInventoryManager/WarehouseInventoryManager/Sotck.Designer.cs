@@ -1,6 +1,6 @@
 ﻿namespace WarehouseInventoryManager
 {
-    partial class Items
+    partial class frmStock
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Items));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStock));
             this.dtgrdItems = new System.Windows.Forms.DataGridView();
             this.txtItemName = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
@@ -49,6 +49,7 @@
             this.dtgrdItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgrdItems.Location = new System.Drawing.Point(12, 134);
             this.dtgrdItems.Name = "dtgrdItems";
+            this.dtgrdItems.ReadOnly = true;
             this.dtgrdItems.Size = new System.Drawing.Size(908, 456);
             this.dtgrdItems.TabIndex = 0;
             this.dtgrdItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrdItems_CellClick);
@@ -59,7 +60,7 @@
             this.txtItemName.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtItemName.Location = new System.Drawing.Point(12, 54);
             this.txtItemName.Name = "txtItemName";
-            this.txtItemName.Size = new System.Drawing.Size(276, 26);
+            this.txtItemName.Size = new System.Drawing.Size(313, 26);
             this.txtItemName.TabIndex = 1;
             this.txtItemName.Text = "Ürün adı";
             this.txtItemName.Enter += new System.EventHandler(this.txtItemName_Enter);
@@ -68,9 +69,9 @@
             // 
             this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtPrice.Location = new System.Drawing.Point(294, 54);
+            this.txtPrice.Location = new System.Drawing.Point(331, 54);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(336, 26);
+            this.txtPrice.Size = new System.Drawing.Size(283, 26);
             this.txtPrice.TabIndex = 1;
             this.txtPrice.Text = "Ürün fıyatı";
             this.txtPrice.Enter += new System.EventHandler(this.txtPrice_Enter);
@@ -79,9 +80,9 @@
             // 
             this.txtCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCode.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtCode.Location = new System.Drawing.Point(636, 54);
+            this.txtCode.Location = new System.Drawing.Point(620, 54);
             this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(284, 26);
+            this.txtCode.Size = new System.Drawing.Size(300, 26);
             this.txtCode.TabIndex = 1;
             this.txtCode.Text = "Ürün kodu";
             this.txtCode.Enter += new System.EventHandler(this.txtCode_Enter);
@@ -155,7 +156,7 @@
             this.lbTitle_items.TabIndex = 4;
             this.lbTitle_items.Text = "Ürünler";
             // 
-            // Items
+            // frmStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -170,8 +171,8 @@
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtItemName);
             this.Controls.Add(this.dtgrdItems);
-            this.Name = "Items";
-            this.Text = "Items";
+            this.Name = "frmStock";
+            this.Text = "Stok";
             this.Load += new System.EventHandler(this.Items_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

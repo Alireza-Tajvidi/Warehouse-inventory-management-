@@ -30,8 +30,8 @@ namespace WarehouseInventoryManager
                 {
                     //adds new users
                     conn.Open();
-                    string query = "insert into User(Username, Password) values('" + this.txtUsername_signup.Text + "'" +
-                        ",'" + this.txtPassword_signup.Text + "')";
+                    string query = "insert into User(Username, Password, Ad,Soyad) values('" + this.txtUsername_signup.Text + "'" +
+                        ",'" + this.txtPassword_signup.Text + "','" + this.txtName.Text + "','" + this.txtLastname.Text + "')";
                     SQLiteCommand cmd = new SQLiteCommand(query, conn);
                     cmd.ExecuteReader();
                     conn.Close();
