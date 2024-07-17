@@ -48,6 +48,7 @@
             // dtgrdInventory
             // 
             this.dtgrdInventory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgrdInventory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(248)))), ((int)(((byte)(225)))));
             this.dtgrdInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgrdInventory.Location = new System.Drawing.Point(12, 162);
             this.dtgrdInventory.Name = "dtgrdInventory";
@@ -132,7 +133,7 @@
             // 
             // btnTakeout
             // 
-            this.btnTakeout.BackColor = System.Drawing.Color.Khaki;
+            this.btnTakeout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(236)))), ((int)(((byte)(179)))));
             this.btnTakeout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTakeout.Location = new System.Drawing.Point(373, 116);
             this.btnTakeout.Name = "btnTakeout";
@@ -170,6 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(202)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(932, 602);
             this.Controls.Add(this.picBack);
             this.Controls.Add(this.btnAdd);

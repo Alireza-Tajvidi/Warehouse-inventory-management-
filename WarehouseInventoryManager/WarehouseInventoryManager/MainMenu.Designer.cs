@@ -47,7 +47,7 @@
             // 
             // btnItems
             // 
-            this.btnItems.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.btnItems.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnItems.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnItems.Location = new System.Drawing.Point(430, 133);
@@ -60,7 +60,7 @@
             // 
             // btnOrder
             // 
-            this.btnOrder.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.btnOrder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOrder.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrder.Location = new System.Drawing.Point(298, 274);
@@ -83,7 +83,7 @@
             // 
             // BtnInventory
             // 
-            this.BtnInventory.BackColor = System.Drawing.Color.DarkOrange;
+            this.BtnInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.BtnInventory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnInventory.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnInventory.Location = new System.Drawing.Point(182, 133);
@@ -98,6 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(202)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BtnInventory);
             this.Controls.Add(this.btnOrder);
