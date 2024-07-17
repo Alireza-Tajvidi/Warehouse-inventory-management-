@@ -37,10 +37,10 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picBack = new System.Windows.Forms.PictureBox();
             this.lbTitle_items = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdItems)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBack)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgrdItems
@@ -135,16 +135,16 @@
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // pictureBox1
+            // picBack
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 37);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.picBack.Image = ((System.Drawing.Image)(resources.GetObject("picBack.Image")));
+            this.picBack.Location = new System.Drawing.Point(13, 2);
+            this.picBack.Name = "picBack";
+            this.picBack.Size = new System.Drawing.Size(33, 37);
+            this.picBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBack.TabIndex = 3;
+            this.picBack.TabStop = false;
+            this.picBack.Click += new System.EventHandler(this.picBack_Click);
             // 
             // lbTitle_items
             // 
@@ -162,7 +162,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 602);
             this.Controls.Add(this.lbTitle_items);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picBack);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnClear);
@@ -175,7 +175,7 @@
             this.Text = "Stok";
             this.Load += new System.EventHandler(this.Items_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdItems)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,7 +191,7 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picBack;
         private System.Windows.Forms.Label lbTitle_items;
     }
 }

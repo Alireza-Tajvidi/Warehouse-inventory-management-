@@ -16,5 +16,13 @@ namespace WarehouseInventoryManager
         {
             InitializeComponent();
         }
+
+
+        private void picBack_Click(object sender, EventArgs e)
+        {
+            frmMainMenu frmMainMenu = new frmMainMenu();
+            this.Close();
+            frmMainMenu.ShowDialog();
+        }
     }
 }

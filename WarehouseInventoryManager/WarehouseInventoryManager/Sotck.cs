@@ -63,7 +63,7 @@ namespace WarehouseInventoryManager
                 try
                 {
                     connection.Open();
-                    string query = "insert into Stock(Urun_ad, Urun_fiyat, Urun_kod, Miktar) values('" + this.txtItemName.Text + "'" +
+                    string query = "insert into Stock(Urun_ad, Urun_fiyat, Urun_kod) values('" + this.txtItemName.Text + "'" +
                         ",'" + this.txtPrice.Text + "' ,'" + this.txtCode.Text + "')";
                     SQLiteCommand cmd = new SQLiteCommand(query, connection);
                     cmd.ExecuteReader();
@@ -96,11 +96,12 @@ namespace WarehouseInventoryManager
                     {
                         int id = reader.GetInt32(0);
                         // Update other columns of the matching row
-                        string updateQuery = "UPDATE Stock SET Urun_ad = @New_ad, Urun_fiyat = @New_fiyat, Miktar = @New_miktar WHERE Id = @Id";
+                        string updateQuery = "UPDATE Stock SET Urun_ad = @New_ad, Urun_fiyat = @New_fiyat, Urun_kod = @New_kod WHERE Id = @Id";
                         using (SQLiteCommand updateCmd = new SQLiteCommand(updateQuery, connection))
                         {
                             updateCmd.Parameters.AddWithValue("@New_ad", txtItemName.Text); 
                             updateCmd.Parameters.AddWithValue("@New_fiyat", txtPrice.Text);
+                            updateCmd.Parameters.AddWithValue("@New_kod", txtCode.Text);
                             updateCmd.Parameters.AddWithValue("@Id", id);
                             updateCmd.ExecuteReader();
                             connection.Close();
@@ -204,7 +205,7 @@ namespace WarehouseInventoryManager
             connection.Close();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void picBack_Click(object sender, EventArgs e)
         {
             frmMainMenu frmMainMenu = new frmMainMenu();
             this.Close();

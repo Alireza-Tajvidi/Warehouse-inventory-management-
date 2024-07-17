@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOrder));
             this.dtgrdOrders = new System.Windows.Forms.DataGridView();
             this.grpbxNew_order = new System.Windows.Forms.GroupBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -42,18 +43,20 @@
             this.lbState = new System.Windows.Forms.Label();
             this.lbOrderNo = new System.Windows.Forms.Label();
             this.panPanel = new System.Windows.Forms.Panel();
+            this.picBack = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdOrders)).BeginInit();
             this.grpbxNew_order.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.grpbxOrder_update.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBack)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgrdOrders
             // 
             this.dtgrdOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgrdOrders.Location = new System.Drawing.Point(12, 12);
+            this.dtgrdOrders.Location = new System.Drawing.Point(12, 41);
             this.dtgrdOrders.Name = "dtgrdOrders";
-            this.dtgrdOrders.Size = new System.Drawing.Size(653, 578);
+            this.dtgrdOrders.Size = new System.Drawing.Size(653, 549);
             this.dtgrdOrders.TabIndex = 0;
             // 
             // grpbxNew_order
@@ -64,7 +67,7 @@
             this.grpbxNew_order.Controls.Add(this.lbItem);
             this.grpbxNew_order.Controls.Add(this.textBox1);
             this.grpbxNew_order.Controls.Add(this.lbCostumer_name);
-            this.grpbxNew_order.Location = new System.Drawing.Point(671, 12);
+            this.grpbxNew_order.Location = new System.Drawing.Point(671, 55);
             this.grpbxNew_order.Name = "grpbxNew_order";
             this.grpbxNew_order.Size = new System.Drawing.Size(249, 269);
             this.grpbxNew_order.TabIndex = 1;
@@ -132,9 +135,9 @@
             this.grpbxOrder_update.Controls.Add(this.txtOrderNo);
             this.grpbxOrder_update.Controls.Add(this.lbState);
             this.grpbxOrder_update.Controls.Add(this.lbOrderNo);
-            this.grpbxOrder_update.Location = new System.Drawing.Point(671, 333);
+            this.grpbxOrder_update.Location = new System.Drawing.Point(671, 369);
             this.grpbxOrder_update.Name = "grpbxOrder_update";
-            this.grpbxOrder_update.Size = new System.Drawing.Size(249, 257);
+            this.grpbxOrder_update.Size = new System.Drawing.Size(249, 210);
             this.grpbxOrder_update.TabIndex = 1;
             this.grpbxOrder_update.TabStop = false;
             this.grpbxOrder_update.Text = "Sipariş güncelle";
@@ -143,7 +146,7 @@
             // 
             this.cmbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbState.FormattingEnabled = true;
-            this.cmbState.Location = new System.Drawing.Point(10, 167);
+            this.cmbState.Location = new System.Drawing.Point(10, 159);
             this.cmbState.Name = "cmbState";
             this.cmbState.Size = new System.Drawing.Size(233, 28);
             this.cmbState.TabIndex = 2;
@@ -151,7 +154,7 @@
             // txtOrderNo
             // 
             this.txtOrderNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOrderNo.Location = new System.Drawing.Point(10, 76);
+            this.txtOrderNo.Location = new System.Drawing.Point(10, 68);
             this.txtOrderNo.Name = "txtOrderNo";
             this.txtOrderNo.Size = new System.Drawing.Size(233, 26);
             this.txtOrderNo.TabIndex = 1;
@@ -160,7 +163,7 @@
             // 
             this.lbState.AutoSize = true;
             this.lbState.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbState.Location = new System.Drawing.Point(6, 144);
+            this.lbState.Location = new System.Drawing.Point(6, 136);
             this.lbState.Name = "lbState";
             this.lbState.Size = new System.Drawing.Size(56, 20);
             this.lbState.TabIndex = 0;
@@ -170,7 +173,7 @@
             // 
             this.lbOrderNo.AutoSize = true;
             this.lbOrderNo.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbOrderNo.Location = new System.Drawing.Point(6, 52);
+            this.lbOrderNo.Location = new System.Drawing.Point(6, 44);
             this.lbOrderNo.Name = "lbOrderNo";
             this.lbOrderNo.Size = new System.Drawing.Size(86, 20);
             this.lbOrderNo.TabIndex = 0;
@@ -179,16 +182,28 @@
             // panPanel
             // 
             this.panPanel.BackColor = System.Drawing.Color.Tomato;
-            this.panPanel.Location = new System.Drawing.Point(671, 297);
+            this.panPanel.Location = new System.Drawing.Point(671, 340);
             this.panPanel.Name = "panPanel";
             this.panPanel.Size = new System.Drawing.Size(249, 12);
             this.panPanel.TabIndex = 2;
+            // 
+            // picBack
+            // 
+            this.picBack.Image = ((System.Drawing.Image)(resources.GetObject("picBack.Image")));
+            this.picBack.Location = new System.Drawing.Point(12, -2);
+            this.picBack.Name = "picBack";
+            this.picBack.Size = new System.Drawing.Size(33, 37);
+            this.picBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBack.TabIndex = 6;
+            this.picBack.TabStop = false;
+            this.picBack.Click += new System.EventHandler(this.picBack_Click);
             // 
             // frmOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 602);
+            this.Controls.Add(this.picBack);
             this.Controls.Add(this.panPanel);
             this.Controls.Add(this.grpbxOrder_update);
             this.Controls.Add(this.grpbxNew_order);
@@ -201,6 +216,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.grpbxOrder_update.ResumeLayout(false);
             this.grpbxOrder_update.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBack)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,5 +237,6 @@
         private System.Windows.Forms.ComboBox cmbState;
         private System.Windows.Forms.Label lbState;
         private System.Windows.Forms.Panel panPanel;
+        private System.Windows.Forms.PictureBox picBack;
     }
 }
