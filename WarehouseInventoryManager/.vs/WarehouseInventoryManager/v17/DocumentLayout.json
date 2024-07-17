@@ -7,23 +7,23 @@
       "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|c:\\users\\parsa\\desktop\\depo envanter yonetici\\warehouseinventorymanager\\warehouseinventorymanager\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\warehouseinventorymanager\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|c:\\users\\parsa\\desktop\\depo envanter yonetici\\warehouseinventorymanager\\warehouseinventorymanager\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\warehouseinventorymanager\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|c:\\users\\parsa\\desktop\\depo envanter yonetici\\warehouseinventorymanager\\warehouseinventorymanager\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\warehouseinventorymanager\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|c:\\users\\parsa\\desktop\\depo envanter yonetici\\warehouseinventorymanager\\warehouseinventorymanager\\sotck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\warehouseinventorymanager\\sotck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\sotck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|c:\\users\\parsa\\desktop\\depo envanter yonetici\\warehouseinventorymanager\\warehouseinventorymanager\\sotck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\warehouseinventorymanager\\sotck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD706E36-89CA-4F58-BA27-002ED7961D6A}|WarehouseInventoryManager\\WarehouseInventoryManager.csproj|solutionrelative:warehouseinventorymanager\\sotck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,11 +34,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",
@@ -50,8 +54,7 @@
               "RelativeToolTip": "WarehouseInventoryManager\\Sotck.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T16:07:49.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T16:07:49.394Z"
             },
             {
               "$type": "Document",
@@ -62,8 +65,7 @@
               "ToolTip": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\Sotck.cs [Design]",
               "RelativeToolTip": "WarehouseInventoryManager\\Sotck.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T16:07:47.709Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-17T16:07:47.709Z"
             },
             {
               "$type": "Document",
@@ -87,8 +89,7 @@
               "ToolTip": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\Order.cs [Design]",
               "RelativeToolTip": "WarehouseInventoryManager\\Order.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T10:56:02.592Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-16T10:56:02.592Z"
             },
             {
               "$type": "Document",
@@ -100,8 +101,7 @@
               "RelativeToolTip": "WarehouseInventoryManager\\Inventory.cs",
               "ViewState": "AQIAAJ8AAAAAAAAAAAAiwMMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T16:02:24.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T16:02:24.413Z"
             },
             {
               "$type": "Document",
@@ -112,12 +112,7 @@
               "ToolTip": "C:\\Users\\parsa\\Desktop\\Depo Envanter yonetici\\WarehouseInventoryManager\\WarehouseInventoryManager\\Inventory.cs [Design]",
               "RelativeToolTip": "WarehouseInventoryManager\\Inventory.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T16:02:22.307Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "WhenOpened": "2024-07-17T16:02:22.307Z"
             }
           ]
         }

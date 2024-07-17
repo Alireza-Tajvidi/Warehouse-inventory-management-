@@ -48,6 +48,7 @@
             // btnItems
             // 
             this.btnItems.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnItems.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnItems.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnItems.Location = new System.Drawing.Point(430, 133);
             this.btnItems.Name = "btnItems";
@@ -60,6 +61,7 @@
             // btnOrder
             // 
             this.btnOrder.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnOrder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOrder.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrder.Location = new System.Drawing.Point(298, 274);
             this.btnOrder.Name = "btnOrder";
@@ -82,6 +84,7 @@
             // BtnInventory
             // 
             this.BtnInventory.BackColor = System.Drawing.Color.DarkOrange;
+            this.BtnInventory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnInventory.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnInventory.Location = new System.Drawing.Point(182, 133);
             this.BtnInventory.Name = "BtnInventory";

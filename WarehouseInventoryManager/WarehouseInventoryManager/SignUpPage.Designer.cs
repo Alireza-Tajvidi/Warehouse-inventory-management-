@@ -109,6 +109,7 @@
             // btnMakeAccount
             // 
             this.btnMakeAccount.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnMakeAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMakeAccount.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMakeAccount.Location = new System.Drawing.Point(371, 310);
             this.btnMakeAccount.Name = "btnMakeAccount";

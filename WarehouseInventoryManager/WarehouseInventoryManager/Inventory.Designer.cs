@@ -121,6 +121,7 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Salmon;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Location = new System.Drawing.Point(12, 117);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(355, 37);
@@ -132,6 +133,7 @@
             // btnTakeout
             // 
             this.btnTakeout.BackColor = System.Drawing.Color.Khaki;
+            this.btnTakeout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTakeout.Location = new System.Drawing.Point(373, 116);
             this.btnTakeout.Name = "btnTakeout";
             this.btnTakeout.Size = new System.Drawing.Size(329, 37);
@@ -143,6 +145,7 @@
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.LightGreen;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Location = new System.Drawing.Point(708, 117);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(210, 35);
@@ -153,6 +156,7 @@
             // 
             // picBack
             // 
+            this.picBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBack.Image = ((System.Drawing.Image)(resources.GetObject("picBack.Image")));
             this.picBack.Location = new System.Drawing.Point(12, 12);
             this.picBack.Name = "picBack";

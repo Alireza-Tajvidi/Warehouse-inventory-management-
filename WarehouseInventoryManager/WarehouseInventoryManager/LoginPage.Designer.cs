@@ -89,6 +89,7 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLogin.Location = new System.Drawing.Point(227, 320);
@@ -102,6 +103,7 @@
             // lbForgotPassword
             // 
             this.lbForgotPassword.AutoSize = true;
+            this.lbForgotPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbForgotPassword.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbForgotPassword.ForeColor = System.Drawing.SystemColors.GrayText;
             this.lbForgotPassword.Location = new System.Drawing.Point(277, 360);
@@ -113,6 +115,7 @@
             // lbSignUp
             // 
             this.lbSignUp.AutoSize = true;
+            this.lbSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbSignUp.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSignUp.ForeColor = System.Drawing.SystemColors.GrayText;
             this.lbSignUp.Location = new System.Drawing.Point(297, 376);

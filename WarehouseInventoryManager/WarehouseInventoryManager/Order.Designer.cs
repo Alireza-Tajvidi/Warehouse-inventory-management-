@@ -41,13 +41,13 @@
             this.txtCustomer = new System.Windows.Forms.TextBox();
             this.lbCostumer_name = new System.Windows.Forms.Label();
             this.grpbxOrder_update = new System.Windows.Forms.GroupBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.cmbState = new System.Windows.Forms.ComboBox();
             this.txtOrderNo = new System.Windows.Forms.TextBox();
             this.lbState = new System.Windows.Forms.Label();
             this.lbOrderNo = new System.Windows.Forms.Label();
             this.panPanel = new System.Windows.Forms.Panel();
             this.picBack = new System.Windows.Forms.PictureBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdOrders)).BeginInit();
             this.grpbxNew_order.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrAmount)).BeginInit();
@@ -86,6 +86,7 @@
             // btnAdd_order
             // 
             this.btnAdd_order.BackColor = System.Drawing.Color.LightGreen;
+            this.btnAdd_order.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd_order.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd_order.Location = new System.Drawing.Point(10, 243);
             this.btnAdd_order.Name = "btnAdd_order";
@@ -184,6 +185,19 @@
             this.grpbxOrder_update.TabStop = false;
             this.grpbxOrder_update.Text = "Sipariş güncelle";
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(11, 174);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(232, 30);
+            this.btnUpdate.TabIndex = 3;
+            this.btnUpdate.Text = "Sipariş Güncelle";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // cmbState
             // 
             this.cmbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -242,18 +256,6 @@
             this.picBack.TabIndex = 6;
             this.picBack.TabStop = false;
             this.picBack.Click += new System.EventHandler(this.picBack_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btnUpdate.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(11, 174);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(232, 30);
-            this.btnUpdate.TabIndex = 3;
-            this.btnUpdate.Text = "Sipariş Güncelle";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // frmOrder
             // 

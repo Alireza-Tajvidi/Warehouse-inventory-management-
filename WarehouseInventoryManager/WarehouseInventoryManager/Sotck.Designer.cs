@@ -90,6 +90,7 @@
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.LightGreen;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(709, 86);
             this.btnAdd.Name = "btnAdd";
@@ -102,6 +103,7 @@
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClear.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(240, 86);
             this.btnClear.Name = "btnClear";
@@ -114,6 +116,7 @@
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.Moccasin;
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Location = new System.Drawing.Point(478, 86);
             this.btnUpdate.Name = "btnUpdate";
@@ -126,6 +129,7 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Salmon;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(12, 86);
             this.btnDelete.Name = "btnDelete";
@@ -137,6 +141,7 @@
             // 
             // picBack
             // 
+            this.picBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBack.Image = ((System.Drawing.Image)(resources.GetObject("picBack.Image")));
             this.picBack.Location = new System.Drawing.Point(13, 2);
             this.picBack.Name = "picBack";
