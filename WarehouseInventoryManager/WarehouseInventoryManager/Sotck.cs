@@ -112,6 +112,7 @@ namespace WarehouseInventoryManager
                     }
                     else
                     {
+                        connection.Close();
                         MessageBox.Show("Urun bulunmadı.");
                     }
                 }

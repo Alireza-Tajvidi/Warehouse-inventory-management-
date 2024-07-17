@@ -53,6 +53,7 @@
             this.dtgrdInventory.Name = "dtgrdInventory";
             this.dtgrdInventory.Size = new System.Drawing.Size(908, 428);
             this.dtgrdInventory.TabIndex = 0;
+            this.dtgrdInventory.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrdInventory_CellDoubleClick);
             // 
             // lbItem
             // 

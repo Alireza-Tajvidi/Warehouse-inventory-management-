@@ -49,7 +49,7 @@ namespace WarehouseInventoryManager
                     {
                         int id = reader.GetInt32(0);  // Assuming the first column is the ID
                         int OldValue = reader.GetInt32(3);
-                        int NewValue = OldValue + Convert.ToInt32(nmrAmount);
+                        int NewValue = OldValue + Convert.ToInt32(nmrAmount.Value);
 
                         string updateQuery = "UPDATE Inventory SET Miktar = @New_miktar WHERE id = @id";
                         using (SQLiteCommand updateCommand = new SQLiteCommand(updateQuery, conn))
@@ -58,6 +58,7 @@ namespace WarehouseInventoryManager
                             updateCommand.Parameters.AddWithValue("@id", id);
 
                             updateCommand.ExecuteNonQuery();
+                            conn.Close();
                             PullData();
                         }
                     }
@@ -72,10 +73,11 @@ namespace WarehouseInventoryManager
                             insertCommand.Parameters.AddWithValue("@Miktar", nmrAmount.Text);
 
                             insertCommand.ExecuteNonQuery();
+                            conn.Close();
                             PullData();
                         }
                     }
-                    conn.Close();
+
                 }
             }
         
@@ -102,11 +104,12 @@ namespace WarehouseInventoryManager
                     {
                         int id = reader.GetInt32(0);  // Assuming the first column is the ID
                         int OldValue = reader.GetInt32(3);
-                        int NewValue = Convert.ToInt32(nmrAmount) - OldValue;
+                        int NewValue = OldValue - Convert.ToInt32(nmrAmount.Value) ;
 
                         if (NewValue < 0)
                         {
                             MessageBox.Show("Envanterde yeterli ürün bulunmadı");
+                            conn.Close();
                         }
                         else
                         {
@@ -117,6 +120,7 @@ namespace WarehouseInventoryManager
                                 updateCommand.Parameters.AddWithValue("@id", id);
 
                                 updateCommand.ExecuteNonQuery();
+                                conn.Close();
                                 PullData();
                             }
                         }
@@ -125,8 +129,8 @@ namespace WarehouseInventoryManager
                     {
                         MessageBox.Show("Ürün bulunmadı!");
                     }
-                    conn.Close();
                 }
+                conn.Close();
             }
         }
 
@@ -147,21 +151,46 @@ namespace WarehouseInventoryManager
                     {
                         int id = reader.GetInt32(0);
                         // Update other columns of the matching row
-                        string deleteQuery = "DELETE FROM Stock WHERE Id = @Id";
+                        string deleteQuery = "DELETE FROM Inventory WHERE Id = @Id";
                         using (SQLiteCommand updateCmd = new SQLiteCommand(deleteQuery, conn))
                         {
                             updateCmd.Parameters.AddWithValue("@Id", id);
                             updateCmd.ExecuteReader();
                            
                         }
-
+                        conn.Close();
                         PullData();
                         
                     }
                     else
                     {
+                        conn.Close();
                         MessageBox.Show("Urun bulunmadı.");
                     }
+                }
+            }
+
+
+        }
+        private void dtgrdInventory_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            conn.Open();
+
+            using (SQLiteConnection connection = new SQLiteConnection(conn))
+            {
+                if (e.RowIndex >= 0)
+                {
+                    // Get the current row
+                    DataGridViewRow row = dtgrdInventory.Rows[e.RowIndex];
+
+                    // Assuming columns: 0 = Id, 1 = Name, 2 = Age, 3 = Email
+                    string ItemName = row.Cells[1].Value.ToString();
+                    string Price = row.Cells[2].Value.ToString();
+                    string Code = row.Cells[3].Value.ToString();
+
+                    // Update text boxes with the values from the selected row
+                    cmbItem.Text = ItemName;
+                    cmbColor.Text = Price;
                 }
             }
             conn.Close();
@@ -169,14 +198,19 @@ namespace WarehouseInventoryManager
 
         private void PullData()
         {
-            conn.Open();
-            SQLiteCommand comm = new SQLiteCommand("Select * From Inventory", conn);
-            DataTable dt = new DataTable();
-            SQLiteDataAdapter dbadapter = new SQLiteDataAdapter(comm);
-            dbadapter.Fill(dt);
 
-            dtgrdInventory.DataSource = dt;
+            conn.Open();
+
+            string selectQuery = "SELECT * FROM [Inventory]";
+            using (SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(selectQuery, conn))
+            {
+                DataTable dataTable = new DataTable();
+                dataAdapter.Fill(dataTable);
+                dtgrdInventory.DataSource = dataTable;
+            }
+            
             conn.Close();
+
         }
 
         private void PullItems()
@@ -213,6 +247,6 @@ namespace WarehouseInventoryManager
             frmMainMenu.ShowDialog();
         }
 
-       
+        
     }
 }
