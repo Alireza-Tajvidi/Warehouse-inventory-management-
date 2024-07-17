@@ -210,6 +210,7 @@
             this.Controls.Add(this.dtgrdOrders);
             this.Name = "frmOrder";
             this.Text = "Sipariş";
+            this.Load += new System.EventHandler(this.frmOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdOrders)).EndInit();
             this.grpbxNew_order.ResumeLayout(false);
             this.grpbxNew_order.PerformLayout();

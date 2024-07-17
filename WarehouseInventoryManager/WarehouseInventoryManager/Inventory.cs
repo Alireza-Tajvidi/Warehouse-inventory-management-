@@ -48,8 +48,8 @@ namespace WarehouseInventoryManager
                     if (reader.Read())
                     {
                         int id = reader.GetInt32(0);  // Assuming the first column is the ID
-                        string OldValue = reader.GetString(3);
-                        string NewValue = OldValue + Convert.ToInt32(nmrAmount);
+                        int OldValue = reader.GetInt32(3);
+                        int NewValue = OldValue + Convert.ToInt32(nmrAmount);
 
                         string updateQuery = "UPDATE Inventory SET Miktar = @New_miktar WHERE id = @id";
                         using (SQLiteCommand updateCommand = new SQLiteCommand(updateQuery, conn))
@@ -80,6 +80,55 @@ namespace WarehouseInventoryManager
             }
         
     }
+
+
+        private void btnTakeout_Click(object sender, EventArgs e)
+        {
+
+            conn.Open();
+
+            string Item = cmbItem.Text;
+            string Color = cmbColor.Text;
+
+            string selectQuery = "SELECT * FROM Inventory WHERE Urun = @New_urun AND Renk = @New_renk";
+            using (SQLiteCommand selectCommand = new SQLiteCommand(selectQuery, conn))
+            {
+                selectCommand.Parameters.AddWithValue("@New_urun", Item);
+                selectCommand.Parameters.AddWithValue("@New_renk", Color);
+
+                using (SQLiteDataReader reader = selectCommand.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        int id = reader.GetInt32(0);  // Assuming the first column is the ID
+                        int OldValue = reader.GetInt32(3);
+                        int NewValue = Convert.ToInt32(nmrAmount) - OldValue;
+
+                        if (NewValue < 0)
+                        {
+                            MessageBox.Show("Envanterde yeterli ürün bulunmadı");
+                        }
+                        else
+                        {
+                            string updateQuery = "UPDATE Inventory SET Miktar = @New_miktar WHERE id = @id";
+                            using (SQLiteCommand updateCommand = new SQLiteCommand(updateQuery, conn))
+                            {
+                                updateCommand.Parameters.AddWithValue("@New_miktar", NewValue.ToString());
+                                updateCommand.Parameters.AddWithValue("@id", id);
+
+                                updateCommand.ExecuteNonQuery();
+                                PullData();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ürün bulunmadı!");
+                    }
+                    conn.Close();
+                }
+            }
+        }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -163,5 +212,7 @@ namespace WarehouseInventoryManager
             this.Close();
             frmMainMenu.ShowDialog();
         }
+
+       
     }
 }

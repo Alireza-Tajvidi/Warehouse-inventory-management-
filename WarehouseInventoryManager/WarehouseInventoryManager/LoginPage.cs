@@ -14,7 +14,7 @@ namespace WarehouseInventoryManager
     
     public partial class frmLogin : Form
     {
-        public static string User_name { get; set; }
+        public string User_name { get; set; }
         SQLiteConnection conn;
         public frmLogin()
         {

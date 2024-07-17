@@ -137,6 +137,7 @@
             this.btnTakeout.TabIndex = 4;
             this.btnTakeout.Text = "Çıkart";
             this.btnTakeout.UseVisualStyleBackColor = false;
+            this.btnTakeout.Click += new System.EventHandler(this.btnTakeout_Click);
             // 
             // btnAdd
             // 
