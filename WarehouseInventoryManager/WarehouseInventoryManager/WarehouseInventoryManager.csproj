@@ -149,6 +149,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatasynceCloudToLocal.cs" />
     <Compile Include="DatasyncLocalToCloud.cs" />
     <Compile Include="FirabaseHelper.cs" />
     <Compile Include="Inventory.cs">

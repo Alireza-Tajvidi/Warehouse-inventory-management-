@@ -20,7 +20,7 @@ namespace WarehouseInventoryManager
         public DatasyncLocalToCloud()
         {
             // Initialize Firebase client
-            firebaseClient = new FirebaseClient("https://yourfirebaseapp.firebaseio.com/");
+            firebaseClient = new FirebaseClient("https://depo-envanter-default-rtdb.firebaseio.com/");
         }
 
         public async Task ReplaceFirebaseDataAsync(string sqliteTableName, string firebaseTableName)
