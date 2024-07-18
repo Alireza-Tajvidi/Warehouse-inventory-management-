@@ -11,7 +11,7 @@ namespace WarehouseInventoryManager
     internal class FirabaseHelper
     {
         private static readonly HttpClient client = new HttpClient();
-        private static readonly string baseUrl = "https://<your-database-name>.firebaseio.com/";
+        private static readonly string baseUrl = "https://depo-envanter-default-rtdb.firebaseio.com/";
 
         public static async Task AddDataAsync<T>(string path, T data)
         {
