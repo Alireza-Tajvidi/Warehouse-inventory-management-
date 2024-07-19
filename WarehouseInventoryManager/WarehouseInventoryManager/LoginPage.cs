@@ -23,7 +23,7 @@ namespace WarehouseInventoryManager
         
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            conn = new SQLiteConnection(@"Data Source=C:\Users\parsa\Desktop\Depo Envanter yonetici\Database\Users.sqlite;Version=3;New=True;Compress=True;");
+            conn = new SQLiteConnection(@"Data Source=C:\Users\parsa\Desktop\Depo Envanter yonetici\Database\Inventory.sqlite;Version=3;New=True;Compress=True;");
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
@@ -57,7 +57,7 @@ namespace WarehouseInventoryManager
             {
                 conn.Open();
 
-                string query = "SELECT * FROM User WHERE Username = @username";
+                string query = "SELECT * FROM kullaniciKayit WHERE kullanici_adi = @username";
                 SQLiteCommand cmd = new SQLiteCommand(query, conn);
                 cmd.Parameters.AddWithValue("@username", username);
 
@@ -65,11 +65,11 @@ namespace WarehouseInventoryManager
 
                 if (reader.Read())
                 {
-                    string storedPassword = reader["Password"].ToString();
+                    string storedPassword = reader["sifre"].ToString();
                     // checks if password and user name match
                     if (storedPassword == password)
                     {
-                        User_name = reader ["Ad"].ToString() + " " + reader["Soyad"].ToString();
+                        User_name = reader ["ad"].ToString() + " " + reader["soyad"].ToString();
                         isValid = true;
                     }
                 }
@@ -91,6 +91,12 @@ namespace WarehouseInventoryManager
         {
             frmSignUp signUpPage = new frmSignUp();
             signUpPage.Show();
+        }
+
+        private async void frmLogin_Load(object sender, EventArgs e)
+        {
+            var dataSyncCtL = new DatasynceCloudToLocal();
+            await dataSyncCtL.ReplaceSQLiteDataAsync("kullaniciKayit", "kullaniciKayit");
         }
     }
 }

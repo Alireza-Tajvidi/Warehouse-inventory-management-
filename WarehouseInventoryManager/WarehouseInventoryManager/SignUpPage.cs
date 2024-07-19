@@ -18,19 +18,20 @@ namespace WarehouseInventoryManager
         public frmSignUp()
         {
             InitializeComponent();
+            this.Load += new EventHandler(frmSignUp_Load);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             // stablishes conection to the data base
-            SQLiteConnection conn = new SQLiteConnection(@"Data Source=C:\Users\parsa\Desktop\Depo Envanter yonetici\Database\Users.sqlite;Version=3;New=True;Compress=True;");
+            SQLiteConnection conn = new SQLiteConnection(@"Data Source=C:\Users\parsa\Desktop\Depo Envanter yonetici\Database\Inventory.sqlite;Version=3;New=True;Compress=True;");
             if (txtPassword_signup.Text == txtPasswordConfirm.Text)
             {
                 try
                 {
                     //adds new users
                     conn.Open();
-                    string query = "insert into User(Username, Password, Ad,Soyad) values('" + this.txtUsername_signup.Text + "'" +
+                    string query = "insert into kullaniciKayit(kullanici_adi, sifre, ad,soyad) values('" + this.txtUsername_signup.Text + "'" +
                         ",'" + this.txtPassword_signup.Text + "','" + this.txtName.Text + "','" + this.txtLastname.Text + "')";
                     SQLiteCommand cmd = new SQLiteCommand(query, conn);
                     cmd.ExecuteReader();
@@ -47,6 +48,16 @@ namespace WarehouseInventoryManager
             {
                 MessageBox.Show("Sifre tekrar yanliş");
             }
+
+            var dataSyncLtC = new DatasyncLocalToCloud();
+            await dataSyncLtC.ReplaceFirebaseDataAsync("kullaniciKayit", "kullaniciKayit");
+
+        }
+
+        private async void frmSignUp_Load(object sender, EventArgs e)
+        {
+            var dataSyncCtL = new DatasynceCloudToLocal();
+            await dataSyncCtL.ReplaceSQLiteDataAsync("kullaniciKayit", "kullaniciKayit");
         }
     }
 }

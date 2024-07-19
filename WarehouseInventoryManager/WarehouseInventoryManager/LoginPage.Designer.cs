@@ -141,6 +141,7 @@
             this.Controls.Add(this.picbxLogo);
             this.Name = "frmLogin";
             this.Text = "Depo Envanter yönetici - Giriş";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picbxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

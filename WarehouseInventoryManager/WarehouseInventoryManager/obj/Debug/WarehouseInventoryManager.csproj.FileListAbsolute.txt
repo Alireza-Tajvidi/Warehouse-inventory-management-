@@ -67,3 +67,11 @@ C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\Warehous
 C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.frmStock.resources
 C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.frmInventory.resources
 C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\obj\Debug\WarehouseInventoryManager.frmOrder.resources
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\bin\Debug\Firebase.dll
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\bin\Debug\LiteDB.dll
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\bin\Debug\System.Reactive.dll
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\bin\Debug\Firebase.xml
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\bin\Debug\LiteDB.xml
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\parsa\Desktop\Depo Envanter yonetici\WarehouseInventoryManager\WarehouseInventoryManager\bin\Debug\System.Reactive.xml

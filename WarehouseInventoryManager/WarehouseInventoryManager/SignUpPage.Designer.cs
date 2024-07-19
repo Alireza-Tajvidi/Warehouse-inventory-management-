@@ -175,6 +175,7 @@
             this.Controls.Add(this.lbUsername_signup);
             this.Name = "frmSignUp";
             this.Text = "SignUpPage";
+            this.Load += new System.EventHandler(this.frmSignUp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
