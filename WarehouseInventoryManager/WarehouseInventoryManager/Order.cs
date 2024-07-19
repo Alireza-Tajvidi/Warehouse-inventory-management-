@@ -23,13 +23,15 @@ namespace WarehouseInventoryManager
 
         }
 
-        private void frmOrder_Load(object sender, EventArgs e)
+        private async void frmOrder_Load(object sender, EventArgs e)
         {
             PullData();
             PullItems();
+            var dataSyncCtL = new DatasynceCloudToLocal();
+            await dataSyncCtL.ReplaceSQLiteDataAsync("siparisler", "siparisler");
         }
 
-        private void btnAdd_order_Click(object sender, EventArgs e)
+        private async void btnAdd_order_Click(object sender, EventArgs e)
         {
             //this code part had issues, keeping it for helping fix further problems
             { /*
@@ -95,18 +97,17 @@ namespace WarehouseInventoryManager
                                 else
                                 {
                                     // Generate new order ID
-                                    string maxIdQuery = "SELECT IFNULL(MAX(id), 0) FROM [Order]";
-                                    using (SQLiteCommand maxIdCommand = new SQLiteCommand(maxIdQuery, conn, transaction))
+                                    // string maxIdQuery = "SELECT IFNULL(MAX(musteri), 0) FROM siparisler";
+                                    using (SQLiteCommand maxIdCommand = new SQLiteCommand( conn))
                                     {
-                                        int maxId = Convert.ToInt32(maxIdCommand.ExecuteScalar());
-                                        int newId = maxId + 1 + 1000;
+                                     //  int maxId = Convert.ToInt32(maxIdCommand.ExecuteScalar());
+                                     //  int newId = maxId + 1 + 1000;
 
                                         // Insert new order
-                                        string insertQuery = "INSERT INTO [Order] (Siparis_nu, Musteri_adi, Urun, Miktar, Durum) " +
-                                                             "VALUES (@Siparis_nu, @Musteri_adi, @Urun, @Miktar, @Durum)";
+                                        string insertQuery = "INSERT INTO  siparisler ( musteri, urun, miktar, durum) " +
+                                                             "VALUES (@Musteri_adi, @Urun, @Miktar, @Durum)";
                                         using (SQLiteCommand cmd = new SQLiteCommand(insertQuery, conn, transaction))
                                         {
-                                            cmd.Parameters.AddWithValue("@Siparis_nu", newId);
                                             cmd.Parameters.AddWithValue("@Musteri_adi", this.txtCustomer.Text);
                                             cmd.Parameters.AddWithValue("@Urun", this.cmbItem.Text);
                                             cmd.Parameters.AddWithValue("@Miktar", this.nmrAmount.Value);
@@ -128,6 +129,8 @@ namespace WarehouseInventoryManager
                                         // Commit the transaction
                                         transaction.Commit();
                                         MessageBox.Show("Sipariş Oluşturuldu ve Envanter güncellendi!");
+                                        var dataSyncLtC = new DatasyncLocalToCloud();
+                                        await dataSyncLtC.ReplaceFirebaseDataAsync("siparisler", "siparisler");
                                     }
                                 }
                             }
@@ -156,9 +159,9 @@ namespace WarehouseInventoryManager
 
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+       private async void btnUpdate_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM [Order] WHERE Siparis_nu = @SearchText";
+            string query = "SELECT * FROM siparisler WHERE siparis_nu = @SearchText";
             string searchText = txtOrderNo.Text;
 
             try
@@ -174,7 +177,7 @@ namespace WarehouseInventoryManager
                         {
                             int id = reader.GetInt32(0);
                             // Update other columns of the matching row
-                            string updateQuery = "UPDATE [Order] SET Durum = @New_durum WHERE Id = @Id";
+                            string updateQuery = "UPDATE siparisler SET durum = @New_durum WHERE Id = @Id";
                             using (SQLiteCommand updateCmd = new SQLiteCommand(updateQuery, conn))
                             {
                                 updateCmd.Parameters.AddWithValue("@New_durum", cmbState.Text); // Corrected parameter name case
@@ -184,6 +187,8 @@ namespace WarehouseInventoryManager
                             conn.Close();
                             MessageBox.Show("Durum güncellendi!");
                             PullData();
+                            var dataSyncLtC = new DatasyncLocalToCloud();
+                            await dataSyncLtC.ReplaceFirebaseDataAsync("[Order]", "siparisler");
                         }
                         else
                         {
@@ -238,7 +243,7 @@ namespace WarehouseInventoryManager
         {
             conn.Open();
 
-            string selectQuery = "SELECT * FROM [Order]";
+            string selectQuery = "SELECT * FROM siparisler";
             using (SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(selectQuery, conn))
             {
                 DataTable dataTable = new DataTable();
