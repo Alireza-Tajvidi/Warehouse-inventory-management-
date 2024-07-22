@@ -37,6 +37,7 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.lbForgotPassword = new System.Windows.Forms.Label();
             this.lbSignUp = new System.Windows.Forms.Label();
+            this.btnGoogleAccount = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,7 +107,7 @@
             this.lbForgotPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbForgotPassword.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbForgotPassword.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lbForgotPassword.Location = new System.Drawing.Point(277, 360);
+            this.lbForgotPassword.Location = new System.Drawing.Point(270, 389);
             this.lbForgotPassword.Name = "lbForgotPassword";
             this.lbForgotPassword.Size = new System.Drawing.Size(85, 16);
             this.lbForgotPassword.TabIndex = 1;
@@ -118,12 +119,24 @@
             this.lbSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbSignUp.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSignUp.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lbSignUp.Location = new System.Drawing.Point(297, 376);
+            this.lbSignUp.Location = new System.Drawing.Point(290, 405);
             this.lbSignUp.Name = "lbSignUp";
             this.lbSignUp.Size = new System.Drawing.Size(43, 16);
             this.lbSignUp.TabIndex = 1;
             this.lbSignUp.Text = "kayıt ol";
             this.lbSignUp.Click += new System.EventHandler(this.lbSignUp_Click);
+            // 
+            // btnGoogleAccount
+            // 
+            this.btnGoogleAccount.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnGoogleAccount.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoogleAccount.Location = new System.Drawing.Point(236, 363);
+            this.btnGoogleAccount.Name = "btnGoogleAccount";
+            this.btnGoogleAccount.Size = new System.Drawing.Size(152, 23);
+            this.btnGoogleAccount.TabIndex = 4;
+            this.btnGoogleAccount.Text = "Google hesap ile gir";
+            this.btnGoogleAccount.UseVisualStyleBackColor = false;
+            this.btnGoogleAccount.Click += new System.EventHandler(this.btnGoogleAccount_Click);
             // 
             // frmLogin
             // 
@@ -131,6 +144,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(202)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(618, 452);
+            this.Controls.Add(this.btnGoogleAccount);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
@@ -158,6 +172,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lbForgotPassword;
         private System.Windows.Forms.Label lbSignUp;
+        private System.Windows.Forms.Button btnGoogleAccount;
     }
 }
 

@@ -98,5 +98,10 @@ namespace WarehouseInventoryManager
             var dataSyncCtL = new DatasynceCloudToLocal();
             await dataSyncCtL.ReplaceSQLiteDataAsync("kullaniciKayit", "kullaniciKayit");
         }
+
+        private void btnGoogleAccount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
